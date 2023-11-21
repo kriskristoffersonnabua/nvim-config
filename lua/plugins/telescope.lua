@@ -4,6 +4,9 @@ return {
     dependencies = {
         'nvim-lua/plenary.nvim'
     },
+    defaults = {
+        file_ignore_patterns = { "node_modules" },
+    },
     config = function ()
         local status_ok, telescope = pcall(require, 'telescope')
 
